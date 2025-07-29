@@ -1,0 +1,28 @@
+# Handle line endings automatically
+* text=auto
+
+# Force LF for source code (optional but common for consistency)
+*.cpp text eol=lf
+*.h text eol=lf
+*.hpp text eol=lf
+*.c text eol=lf
+*.cs text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+
+# Treat Unreal binary assets as binary
+*.uasset binary
+*.umap binary
+*.uproject text eol=lf
+*.ini text eol=lf
+
+# Visual Studio / Rider files
+*.sln text eol=crlf
+*.vcxproj text eol=crlf
+*.filters text eol=crlf
+*.user text eol=crlf
+
+# Ignore merge conflicts on binary files
+*.uasset -merge
+*.umap -merge
+
